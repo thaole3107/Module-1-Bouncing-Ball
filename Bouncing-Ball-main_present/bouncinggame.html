@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bouncing Ball Game</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        canvas {
+            background-image: url("https://www.pexels.com/photo/photo-of-purple-flower-1172849/");
+            display: block;
+            border:5px solid rgba(147, 135, 222, 0.99);
+            margin: 0 auto;
+            cursor: none;
+        }
+        #canvas {
+            width: 500px;
+            height: 500px;
+            margin: 0 auto;
+            cursor: none;
+        }
+        h1 {
+            text-align: center;
+            margin: 40px 0;
+            font-weight: bold;
+            color: cornflowerblue;
+        }
+        a {
+            font-size: 40px;
+        }
+
+        #gameOver {
+            width: 200px;
+            position: absolute;
+            left: 50%;
+            transform: translate(-100px);
+            top: 35%;
+            display: none;
+        }
+
+        #again {
+            font-weight: bold;
+            padding: 5px;
+            position: absolute;
+            left: 51%;
+            transform: translateX(-50px);
+            top: 95%;
+        }
+    </style>
+</head>
+<body>
+<div id="canvas">
+    <h1>B<a>☺</a>UNCING BALL</h1>
+    <canvas id="myCanvas" width="500" height="500"></canvas>
+    <img id="gameOver" src="https://pngimg.com/uploads/game_over/game_over_PNG57.png" >
+    <script src="script.js"></script>
+    <input type="button" id="again" value="Play Again" onclick="reset()"></input>
+</div>
+
+</body>
+</html>

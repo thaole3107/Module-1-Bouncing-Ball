@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bouncing Ball Game</title>
+    <style>
+        *{
+
+            padding: 0;
+            margin: 0;
+            /*Tại sao có dòng này bỏ trong thẻ style, ý nghĩa thẻ style*/
+        }
+        canvas {
+            background-image: url("https://khoinguonsangtao.vn/wp-content/uploads/2022/08/background-dep-cute-qua-dau.jpg");
+            display: block;
+            /*ko cho thanh phan khac nam canh no*/
+            border: 5px solid burlywood;
+            margin: 0 auto;
+            /*khoang cach cua canvas voi doi tuong khac*/
+            /*cursor: none;*/
+            /*an con tro chout ben trong canvas*/
+        }
+        #canvas {
+            width: 500px;
+            height: 500px;
+            margin: 0 auto;
+            cursor: none;
+        }
+        h1 {
+            text-align: center;
+            margin: 40px 0;
+            font-weight: bold;
+            color: cornflowerblue;
+        }
+        a {
+            font-size: 40px;
+        }
+        #gameOver {
+            width: 200px;
+            position: absolute;
+            left: 50%;
+            transform: translate(-100px);
+            top: 35%;
+            display: none;
+        }
+        #again {
+            font-weight: bold;
+            /*display: none;*/
+            padding: 5px;
+            position: absolute;
+            /*định vị vị trí tuyệt đối của đối tượng*/
+            left: 51%;
+            transform: translateX(-50px);
+            top: 90%;
+            cursor: pointer;
+        }
+
+    </style>
+
+</head>
+<body>
+<div>
+    <h1>B<a>☺</a>BOUNCING BALL</h1>
+    <canvas id="myCanvas" width="500" height="500"></canvas>
+    <img id="gameOver" src="https://pngimg.com/uploads/game_over/game_over_PNG57.png" >
+    <script src="script_Phong.js"></script>
+    <input type="button" id="again" value="Play Again" onclick="reset()"></input>
+
+</div>
+</body>
+</html>
